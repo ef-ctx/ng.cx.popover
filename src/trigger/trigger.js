@@ -29,9 +29,9 @@ angular.module('ng.cx.popover.trigger', [
             scope: {},
             bindToController: {
                 ioPopoverId : '@cxPopoverTriggerIoPopoverId',
-                ioPlacement : '@cxPopoverTriggerIoPlacement',
-                ioEvent     : '@cxPopoverTriggerIoEvent',
-                ioEnabled   : '=cxPopoverTriggerIoEnabled'
+                ioPlacement : '@?cxPopoverTriggerIoPlacement',
+                ioEvent     : '@?cxPopoverTriggerIoEvent',
+                ioEnabled   : '=?cxPopoverTriggerIoEnabled'
             },
             controller: 'cxPopoverTriggerController as cxPopoverTriggerController'
         };

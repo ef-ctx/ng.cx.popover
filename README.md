@@ -11,10 +11,10 @@ Component in charge of triggering show and hide events for the popover.
 
 ```html
     <div cx-popover-trigger
-         cx-popover-trigger-io-popover-id="myPopover (@)"
-         cx-popover-trigger-io-placement="top || right || left || bottom (@)"
-         cx-popover-trigger-io-event="mouseenter || click (@)"
-         cx-popover-trigger-io-enabled="true || false (=) "
+         cx-popover-trigger-io-popover-id = "(@) myPopover"
+         cx-popover-trigger-io-placement  = "(@?) top || right || left || bottom"
+         cx-popover-trigger-io-event      = "(@?) mouseenter || click"
+         cx-popover-trigger-io-enabled    = "(=?) true || false "
          >
     </div>
 ```
@@ -24,7 +24,7 @@ The actual popover
 
 ```html
     <div cx-popover
-         cx-popover-io-popover-id="myPopover (@)"
+         cx-popover-io-popover-id="(@?) myPopover"
          >
     </div>
 ```
