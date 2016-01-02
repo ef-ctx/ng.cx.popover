@@ -1,3 +1,13 @@
+<a name="0.0.2"></a>
+## 0.0.2 (2016-01-02)
+
+
+### Bug Fixes
+
+* **trigger:** directive io optional values ([f3e8a67](https://github.com/ef-ctx/ng.cx.popover/commit/f3e8a67))
+
+
+
 <a name="0.0.1"></a>
 ## 0.0.1 (2016-01-02)
 

@@ -3,9 +3,9 @@
 
 	/**********************************************************
 	 * 
-	 * ng.cx.popover - v0.0.1
+	 * ng.cx.popover - v0.0.2
 	 * 
-	 * Release date : 2016-01-02 : 19:14
+	 * Release date : 2016-01-02 : 19:37
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
@@ -274,9 +274,9 @@
 	            scope: {},
 	            bindToController: {
 	                ioPopoverId : '@cxPopoverTriggerIoPopoverId',
-	                ioPlacement : '@cxPopoverTriggerIoPlacement',
-	                ioEvent     : '@cxPopoverTriggerIoEvent',
-	                ioEnabled   : '=cxPopoverTriggerIoEnabled'
+	                ioPlacement : '@?cxPopoverTriggerIoPlacement',
+	                ioEvent     : '@?cxPopoverTriggerIoEvent',
+	                ioEnabled   : '=?cxPopoverTriggerIoEnabled'
 	            },
 	            controller: 'cxPopoverTriggerController as cxPopoverTriggerController'
 	        };
