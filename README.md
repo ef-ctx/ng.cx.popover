@@ -6,7 +6,7 @@ Popover component for angular applications.
 
 ng.cx.popover provides 2 directives:
 
-### `cx-popover-trigger`
+`cx-popover-trigger`
 Component in charge of triggering show and hide events for the popover.
 
 ```html
@@ -19,7 +19,7 @@ Component in charge of triggering show and hide events for the popover.
     </div>
 ```
 
-### `cx-popover-trigger`
+`cx-popover`
 The actual popover
 
 ```html

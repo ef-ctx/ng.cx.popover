@@ -1,0 +1,67 @@
+.cx-popover {
+  position: absolute;
+  opacity: 0;
+  padding: 15px 18px;
+  z-index: 3000;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0s;
+}
+.cx-popover.visible {
+  opacity: 1;
+}
+.cx-popover .arrow {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border: none;
+  background-color: white;
+  box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.cx-popover.right {
+  transform: translate3d(20px, 0, 0);
+}
+.cx-popover.right.ng-hide {
+  transform: translate3d(40px, 0, 0);
+}
+.cx-popover.right .arrow {
+  top: 40%;
+  left: -5px;
+  box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.cx-popover.left {
+  transform: translate3d(-20px, 0, 0);
+}
+.cx-popover.left.ng-hide {
+  transform: translate3d(-40px, 0, 0);
+}
+.cx-popover.left .arrow {
+  top: 40%;
+  right: -5px;
+  box-shadow: 2px -2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.cx-popover.top {
+  transform: translate3d(0, -20px, 0);
+}
+.cx-popover.top.ng-hide {
+  transform: translate3d(0, -40px, 0);
+}
+.cx-popover.top .arrow {
+  bottom: -5px;
+  left: 45%;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.cx-popover.bottom {
+  transform: translate3d(0, 20px, 0);
+}
+.cx-popover.bottom.ng-hide {
+  transform: translate3d(0, 40px, 0);
+}
+.cx-popover.bottom .arrow {
+  top: -5px;
+  left: 45%;
+  box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.1);
+}

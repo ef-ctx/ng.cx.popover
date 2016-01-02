@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html ng-app="popoverExample">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="EF Education First - CTX">
+    <meta name="description" content="">
+    <title>EF CTX popover</title>
+
+    <link rel="stylesheet" href="ng.cx.popover.css" />
+
+    <style>
+        html, body {
+            background-color: #999;
+            font-family: helvetive, arial;
+            padding-top: 100px;
+        }
+
+        .main-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px;
+            border: 2px solid #bbb;
+            white-space: nowrap;
+        }
+
+        .container {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #bbb;
+        }
+
+        .trigger {
+            margin: 25px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 4px;
+            border: 2px solid #bbb;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        .trigger:hover {
+            border: 2px solid #ccc;
+            background-color: #ddd;
+        }
+
+        .popover {
+            max-width: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <div class="container">
+
+            <h2> hover </h2>
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="rightPopover">
+                RIGHT - mouseover
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="rightPopover">
+                right - mouseover
+            </div>
+
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="topPopover"
+            cx-popover-trigger-io-placement="top">
+                top - mouseover
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="topPopover">
+                yeah
+            </div>
+
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="leftPopover"
+            cx-popover-trigger-io-placement="left">
+                left - mouseover
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="leftPopover">
+                yeah
+            </div>
+
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="bottomPopover"
+            cx-popover-trigger-io-placement="bottom">
+                bottom - mouseover
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="bottomPopover">
+                yeah
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h2> click </h2>
+
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="clickRightPopover"
+            cx-popover-trigger-io-event="click">
+                right
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="clickRightPopover">
+                right click popover
+            </div>
+
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="clickTopPopover"
+            cx-popover-trigger-io-placement="top" cx-popover-trigger-io-event="click">
+                top
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="clickTopPopover">
+                top click popover
+            </div>
+
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="clickLeftPopover"
+            cx-popover-trigger-io-placement="left" cx-popover-trigger-io-event="click">
+                left
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="clickLeftPopover">
+                left click popover
+            </div>
+
+            <div class="trigger" cx-popover-trigger cx-popover-trigger-io-popover-id="clickBottomPopover"
+            cx-popover-trigger-io-placement="bottom" cx-popover-trigger-io-event="click">
+                bottom
+            </div>
+
+            <div class="popover" cx-popover cx-popover-io-popover-id="clickBottomPopover">
+                Bottom click popover
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" src="../vendor/angular/angular.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../vendor/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="ng.cx.popover.js"></script>
+    <script>
+        angular.module('popoverExample', ['ng.cx.popover']);
+    </script>
+</body>
+
+</html>
