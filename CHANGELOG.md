@@ -1,3 +1,9 @@
+<a name="0.0.1"></a>
+## 0.0.1 (2016-01-02)
+
+
+
+
 <a name="0.0.17"></a>
 ## [0.0.17](https://github.com/ef-ctx/ngAutobahn/compare/v0.0.16...v0.0.17) (2015-12-23)
 

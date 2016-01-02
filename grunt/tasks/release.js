@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         'wrap',
         'uglify',
         'conventionalChangelog',
-        //'bump-commit'
+        'bump-commit'
     ]);
 
     grunt.registerTask('update-pkg','',function () {
