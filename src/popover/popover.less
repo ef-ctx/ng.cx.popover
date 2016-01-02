@@ -1,0 +1,89 @@
+.cx-popover {
+    position: absolute;
+    opacity: 0;
+
+    padding: 15px 18px;
+
+    z-index: 3000;
+
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0s;
+
+    &.visible {
+        opacity: 1;
+    }
+
+    .arrow {
+        position: absolute;
+
+        display: block;
+        width: 12px;
+        height: 12px;
+
+        transform: rotate(45deg);
+
+        border: none;
+        background-color: white;
+        box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &.right {
+        transform: translate3d(20px, 0, 0);
+
+        &.ng-hide{
+            transform: translate3d(40px, 0, 0);
+        }
+
+        .arrow {
+            top: 40%;
+            left: -5px;
+            box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &.left {
+        transform: translate3d(-20px, 0, 0);
+
+        &.ng-hide{
+            transform: translate3d(-40px, 0, 0);
+        }
+
+        .arrow {
+            top: 40%;
+            right: -5px;
+            box-shadow: 2px -2px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &.top {
+        transform: translate3d(0, -20px, 0);
+
+        &.ng-hide{
+            transform: translate3d(0, -40px, 0);
+        }
+
+        .arrow {
+            bottom: -5px;
+            left: 45%;
+            box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &.bottom {
+        transform: translate3d(0, 20px, 0);
+
+        &.ng-hide{
+            transform: translate3d(0, 40px, 0);
+        }
+
+        .arrow {
+            top: -5px;
+            left: 45%;
+            box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+    }
+}
