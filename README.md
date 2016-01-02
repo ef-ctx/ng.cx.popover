@@ -29,6 +29,8 @@ The actual popover
     </div>
 ```
 
+Check the [live example](http://codepen.io/JaimeBeneytez/full/QydpyG/) to see it working.
+
 ## Getting Started
 
 Add **ng.cx.popover** to you project.
