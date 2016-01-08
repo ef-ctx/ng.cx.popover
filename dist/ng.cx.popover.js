@@ -5,7 +5,7 @@
 	 * 
 	 * ng.cx.popover - v0.0.2
 	 * 
-	 * Release date : 2016-01-02 : 19:37
+	 * Release date : 2016-01-08 : 10:54
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
@@ -310,7 +310,7 @@
 	            _handler,
 	            _popover;
 	
-	        self.ioEnabled   = self.ioEnabled   || true;
+	        self.ioEnabled   = angular.isDefined(self.ioEnabled) ? self.ioEnabled : true;
 	        self.ioEvent     = self.ioEvent     || 'mouseenter';
 	        self.ioPlacement = self.ioPlacement || 'right';
 	

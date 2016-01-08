@@ -65,7 +65,7 @@ angular.module('ng.cx.popover.trigger', [
             _handler,
             _popover;
 
-        self.ioEnabled   = self.ioEnabled   || true;
+        self.ioEnabled   = angular.isDefined(self.ioEnabled) ? self.ioEnabled : true;
         self.ioEvent     = self.ioEvent     || 'mouseenter';
         self.ioPlacement = self.ioPlacement || 'right';
 
