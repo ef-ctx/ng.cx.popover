@@ -66,6 +66,7 @@ angular.module('ng.cx.popover.popover', [
 
         this.show = show;
         this.hide = hide;
+        this.remove = remove;
 
         Object.defineProperty($scope, 'isVisible', {
             get: function() {
@@ -86,6 +87,14 @@ angular.module('ng.cx.popover.popover', [
         });
 
         _init();
+
+        $scope.$on('$destroy', function() {
+            cxPopoverService.deregistrerPopover(self);
+        });
+
+        function remove() {
+            $element.remove();
+        }
 
         function _init() {
             cxPopoverService.registrerPopover(self);

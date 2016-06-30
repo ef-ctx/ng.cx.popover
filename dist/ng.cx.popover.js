@@ -5,7 +5,7 @@
 	 * 
 	 * ng.cx.popover - v0.0.3
 	 * 
-	 * Release date : 2016-01-08 : 10:57
+	 * Release date : 2016-06-30 : 10:39
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
@@ -99,6 +99,7 @@
 	
 	        this.show = show;
 	        this.hide = hide;
+	        this.remove = remove;
 	
 	        Object.defineProperty($scope, 'isVisible', {
 	            get: function() {
@@ -119,6 +120,14 @@
 	        });
 	
 	        _init();
+	
+	        $scope.$on('$destroy', function() {
+	            cxPopoverService.deregistrerPopover(self);
+	        });
+	
+	        function remove() {
+	            $element.remove();
+	        }
 	
 	        function _init() {
 	            cxPopoverService.registrerPopover(self);
@@ -227,6 +236,13 @@
 	            _popoverMap[popoverController.popoverId] = popoverController;
 	        }
 	
+	        function deregistrerPopover(popoverController) {
+	            if (_popoverMap.hasOwnProperty(popoverController.popoverId)) {
+	                popoverController.remove();
+	                delete _popoverMap[popoverController.popoverId];
+	            }
+	        }
+	
 	        function getPopoverById(id) {
 	            return _popoverMap[id];
 	        }
@@ -315,6 +331,10 @@
 	        self.ioPlacement = self.ioPlacement || 'right';
 	
 	        _init();
+	
+	        $scope.$on('$destroy', function() {
+	            cxPopoverService.deregistrerPopover(_popover);
+	        });
 	
 	        function _init() {
 	            _addEventListeners(self.ioEvent);

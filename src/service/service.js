@@ -30,6 +30,13 @@ angular.module('ng.cx.popover.service', [
             _popoverMap[popoverController.popoverId] = popoverController;
         }
 
+        function deregistrerPopover(popoverController) {
+            if (_popoverMap.hasOwnProperty(popoverController.popoverId)) {
+                popoverController.remove();
+                delete _popoverMap[popoverController.popoverId];
+            }
+        }
+
         function getPopoverById(id) {
             return _popoverMap[id];
         }
