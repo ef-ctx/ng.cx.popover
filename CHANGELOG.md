@@ -1,3 +1,13 @@
+<a name="0.0.6"></a>
+## [0.0.6](https://github.com/ef-ctx/ng.cx.popover/compare/v0.0.5...v0.0.6) (2016-06-30)
+
+
+### Bug Fixes
+
+* check if trigger still has popover ([d3a4340](https://github.com/ef-ctx/ng.cx.popover/commit/d3a4340))
+
+
+
 <a name="0.0.5"></a>
 ## [0.0.5](https://github.com/ef-ctx/ng.cx.popover/compare/v0.0.4...v0.0.5) (2016-06-30)
 

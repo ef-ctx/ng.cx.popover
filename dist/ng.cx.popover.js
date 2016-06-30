@@ -3,9 +3,9 @@
 
 	/**********************************************************
 	 * 
-	 * ng.cx.popover - v0.0.5
+	 * ng.cx.popover - v0.0.6
 	 * 
-	 * Release date : 2016-06-30 : 10:42
+	 * Release date : 2016-06-30 : 10:46
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
@@ -334,7 +334,9 @@
 	        _init();
 	
 	        $scope.$on('$destroy', function() {
-	            cxPopoverService.deregistrerPopover(_popover);
+	            if (_popover) {
+	                cxPopoverService.deregistrerPopover(_popover);
+	            }
 	        });
 	
 	        function _init() {
