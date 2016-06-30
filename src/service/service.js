@@ -23,6 +23,7 @@ angular.module('ng.cx.popover.service', [
         var _popoverMap = {};
 
         this.registrerPopover = registrerPopover;
+        this.deregistrerPopover = deregistrerPopover;
         this.getPopoverById = getPopoverById;
         this.hideAll = hideAll;
 
