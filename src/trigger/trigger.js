@@ -72,7 +72,9 @@ angular.module('ng.cx.popover.trigger', [
         _init();
 
         $scope.$on('$destroy', function() {
-            cxPopoverService.deregistrerPopover(_popover);
+            if (_popover) {
+                cxPopoverService.deregistrerPopover(_popover);
+            }
         });
 
         function _init() {
