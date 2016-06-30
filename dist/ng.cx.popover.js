@@ -3,9 +3,9 @@
 
 	/**********************************************************
 	 * 
-	 * ng.cx.popover - v0.0.3
+	 * ng.cx.popover - v0.0.4
 	 * 
-	 * Release date : 2016-06-30 : 10:39
+	 * Release date : 2016-06-30 : 10:40
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
