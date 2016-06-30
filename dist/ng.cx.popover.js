@@ -3,9 +3,9 @@
 
 	/**********************************************************
 	 * 
-	 * ng.cx.popover - v0.0.4
+	 * ng.cx.popover - v0.0.5
 	 * 
-	 * Release date : 2016-06-30 : 10:40
+	 * Release date : 2016-06-30 : 10:42
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
@@ -229,6 +229,7 @@
 	        var _popoverMap = {};
 	
 	        this.registrerPopover = registrerPopover;
+	        this.deregistrerPopover = deregistrerPopover;
 	        this.getPopoverById = getPopoverById;
 	        this.hideAll = hideAll;
 	

@@ -1,3 +1,13 @@
+<a name="0.0.5"></a>
+## [0.0.5](https://github.com/ef-ctx/ng.cx.popover/compare/v0.0.4...v0.0.5) (2016-06-30)
+
+
+### Bug Fixes
+
+* expose deregisterPopover ([2525787](https://github.com/ef-ctx/ng.cx.popover/commit/2525787))
+
+
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/ef-ctx/ng.cx.popover/compare/v0.0.3...v0.0.4) (2016-06-30)
 
