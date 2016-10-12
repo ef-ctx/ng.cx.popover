@@ -63,7 +63,8 @@ angular.module('ng.cx.popover.trigger', [
         var self = this,
             _popoverId = this.ioPopoverId,
             _handler,
-            _popover;
+            _popover,
+            _isHoverSupported = !(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
 
         self.ioEnabled   = angular.isDefined(self.ioEnabled) ? self.ioEnabled : true;
         self.ioEvent     = self.ioEvent     || 'mouseenter';
@@ -95,8 +96,10 @@ angular.module('ng.cx.popover.trigger', [
         function _addEventListeners() {
             switch(self.ioEvent){
                 case 'mouseenter':
-                    _addTriggerListener(_show);
-                    _addLeaveListener();
+                    if (_isHoverSupported) {
+                        _addTriggerListener(_show);
+                        _addLeaveListener();
+                    }
                     break;
                 case 'click':
                     _addTriggerListener(_onClickHandler);

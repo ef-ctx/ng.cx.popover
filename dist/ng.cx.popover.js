@@ -5,7 +5,11 @@
 	 * 
 	 * ng.cx.popover - v0.0.6
 	 * 
+<<<<<<< 318d629baf4a1ff01832efe2dd94e29042f90bd0
 	 * Release date : 2016-06-30 : 10:46
+=======
+	 * Release date : 2016-10-10 : 16:10
+>>>>>>> touch screen detection
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
