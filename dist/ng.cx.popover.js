@@ -3,13 +3,9 @@
 
 	/**********************************************************
 	 * 
-	 * ng.cx.popover - v0.0.6
+	 * ng.cx.popover - v0.0.7
 	 * 
-<<<<<<< 318d629baf4a1ff01832efe2dd94e29042f90bd0
-	 * Release date : 2016-06-30 : 10:46
-=======
-	 * Release date : 2016-10-10 : 16:10
->>>>>>> touch screen detection
+	 * Release date : 2016-10-12 : 15:14
 	 * Author       : Jaime Beneytez - EF CTX 
 	 * License      : MIT 
 	 * 
@@ -329,7 +325,8 @@
 	        var self = this,
 	            _popoverId = this.ioPopoverId,
 	            _handler,
-	            _popover;
+	            _popover,
+	            _isHoverSupported = !(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
 	
 	        self.ioEnabled   = angular.isDefined(self.ioEnabled) ? self.ioEnabled : true;
 	        self.ioEvent     = self.ioEvent     || 'mouseenter';
@@ -361,8 +358,10 @@
 	        function _addEventListeners() {
 	            switch(self.ioEvent){
 	                case 'mouseenter':
-	                    _addTriggerListener(_show);
-	                    _addLeaveListener();
+	                    if (_isHoverSupported) {
+	                        _addTriggerListener(_show);
+	                        _addLeaveListener();
+	                    }
 	                    break;
 	                case 'click':
 	                    _addTriggerListener(_onClickHandler);
